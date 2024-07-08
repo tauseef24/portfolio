@@ -1,6 +1,5 @@
 import React from "react";
 
-import { BallCanvas } from "./canvas";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
@@ -40,4 +39,3 @@ const IconComp = ({ icon }) => {
 };
 
 export default SectionWrapper(Tech, "");
-// export default Tech;
