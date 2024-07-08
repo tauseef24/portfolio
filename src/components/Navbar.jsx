@@ -41,7 +41,7 @@ const Navbar = () => {
             >
               {link.title === "Resume" ? (
                 <a
-                  href="https://drive.google.com/file/d/1SMbJ-7OgUE9C59FiJGSiYR4Tovaj62z-/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1hxbnEnSWibX_bVrQmIOxbqnHsg59XMgv/view?usp=sharing"
                   target="_blank"
                 >
                   {link.title}
