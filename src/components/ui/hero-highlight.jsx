@@ -43,7 +43,7 @@ export const HeroHighlight = ({ children, className, containerClassName }) => {
         }}
       />
 
-      <div className={cn("relative z-20", className)}>{children}</div>
+      <div className={cn("relative z-10", className)}>{children}</div>
     </div>
   );
 };
