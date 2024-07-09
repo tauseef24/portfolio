@@ -64,7 +64,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 r-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 black-gradient absolute top-20 r-0 mx-4 my-2 min-w-[140px] z-200 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
@@ -78,7 +78,16 @@ const Navbar = () => {
                     setActive(link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  {link.title === "Resume" ? (
+                    <a
+                      href="https://drive.google.com/file/d/1hxbnEnSWibX_bVrQmIOxbqnHsg59XMgv/view?usp=sharing"
+                      target="_blank"
+                    >
+                      {link.title}
+                    </a>
+                  ) : (
+                    <a href={`#${link.id}`}>{link.title}</a>
+                  )}
                 </li>
               ))}
             </ul>
